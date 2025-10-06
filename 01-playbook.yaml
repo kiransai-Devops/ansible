@@ -1,6 +1,6 @@
 - name: connect the node server
-  host: node # which sever we want to connect
+  hosts: frontend # which sever we want to connect
   tasks: #list of tasks/collection/moduels
-  - name: ping the node server
+  - name: ping 
     ansible.builtin.ping:
     
