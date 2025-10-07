@@ -1,9 +1,9 @@
-- name: loops
+- name: insall packages
   hosts: local
   connection: local
   become: yes
   tasks:
-  - name: print
+  - name: print names
     ansible.builtin.package:
       name: "{{ item.name }}"
       state: "{{ item.latest }}"
