@@ -30,4 +30,4 @@
    # convert list to dictionary
   - name: convert list to dictionary
     ansible.builtin.debug:
-     msg: "listtags are: {{ listtags | item2dict }}"
+     msg: "dictionary are: {{ listtags | item2dict }}"
