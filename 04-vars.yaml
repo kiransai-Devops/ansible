@@ -1,0 +1,14 @@
+- name: print variables
+  hosts: local
+  connection: local
+  vars:
+
+   NAME: sai
+   AGE: 25
+   DOB: 1999
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+     msg: "name: {{NAME}}, age: {{AGE}}, dob: {{DOB}}"
+    
+
