@@ -3,16 +3,16 @@
   connection: local
   vars:
    technologies: devops, linux, shell, ansible #string
-   # Dictionary
+    # Dictionary
    tags:
      application: payment
      environment: dev
-     # list
+    # list
    listTags:
-   - key: Application
-     value: payment
-   - key: Environment
-     value: dev
+   -  key: Application
+      value: payment
+   -  key: Environment
+      value: dev
   tasks:
   - name: default variable
     ansible.builtin.debug:
@@ -30,4 +30,4 @@
    # convert list to map
   - name: convert list to map
     ansible.builtin.debug:
-     msg: " tag map: {{ listTags | item2dict }}"
+     msg: " tag map: {{ listTags | items2dict }}"
