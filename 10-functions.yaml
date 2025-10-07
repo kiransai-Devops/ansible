@@ -8,7 +8,7 @@
     application: payment
     environment: dev
     # list
-   listtags:
+   listTags:
    - key: Application
      value: payment
    - key: Environment
@@ -28,6 +28,6 @@
      msg: " tags are: {{ tags | dict2items }}"
    
    # convert list to dictionary
-  - name: convert list to dictionary
+  - name: convert list to map
     ansible.builtin.debug:
-     msg: "dictionary are: {{ listtags | item2dict }}"
+     msg: "tag map: {{ listTags | item2dict }}"
