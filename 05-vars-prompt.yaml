@@ -8,7 +8,7 @@
 
   - name: password
     prompt: what is your password?
-    private: true
+    private: false
   
   tasks: 
   - name: print username and password
