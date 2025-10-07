@@ -9,6 +9,6 @@
   tasks:
   - name: print information
     ansible.builtin.debug:
-     msg: "name: {{NAME}}, age: {{AGE}}, dob: {{DOB}}"
+     msg: " name: {{NAME}}, age: {{AGE}}, dob: {{DOB}} "
     
 
